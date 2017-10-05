@@ -9,9 +9,11 @@ using namespace std;
 
 std::string name;
 ros::Publisher chatter_pub;
+chatbot_node::reply_msg replymsg;
 
 void chatterCallback(const message_ui::sent_msg& sentmsg)
-  {  chatbot_node::reply_msg replymsg;
+  {  
+    
   	
 	if(sentmsg.message.compare("Hello")==0){
   		replymsg.message="Hello, "+ name;  		
@@ -32,6 +34,7 @@ int main(int argc, char **argv) {
   ros::init(argc, argv, "chatbot_node");
   ros::NodeHandle n;
   n.getParam("/name", name);  
+  replymsg.header.stamp=ros::Time::now();
 
   //Add your code here
   chatter_pub = n.advertise<chatbot_node::reply_msg>("reply_msg", 1000);
