@@ -1,4 +1,5 @@
 # ROSChatBot
+A low level intelligent chatbot made on ROS, Catkin and C++.
 ## Steps:
 1. Install ROS Kinetic and Catkin
 2. Clone Repo
