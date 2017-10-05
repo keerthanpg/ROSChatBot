@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/keerthana/catkin_ws/devel/include/arithmetic_node/arithmetic_reply.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+
 /home/keerthana/catkin_ws/devel/include/chatbot_node/reply_msg.h
 string
 -
@@ -90,6 +108,8 @@ chatbot_node/reply_msg.h
 message_ui/sent_msg.h
 -
 counter_node/counter.h
+-
+arithmetic_node/arithmetic_reply.h
 -
 
 /opt/ros/kinetic/include/ros/advertise_options.h

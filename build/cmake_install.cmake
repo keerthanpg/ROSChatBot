@@ -117,6 +117,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/keerthana/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/keerthana/catkin_ws/build/arithmetic_node/cmake_install.cmake")
   include("/home/keerthana/catkin_ws/build/chatbot_node/cmake_install.cmake")
   include("/home/keerthana/catkin_ws/build/counter_node/cmake_install.cmake")
   include("/home/keerthana/catkin_ws/build/message_ui/cmake_install.cmake")
